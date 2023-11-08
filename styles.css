@@ -69,3 +69,44 @@ main article audio {
     background-color: #fff; 
     margin: 20px 0;
 }
+
+footer {
+    background-color: #3b3b3b;
+    padding: 40px 80px;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.social-links li a {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    min-width: 40px;
+    height: 40px;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.social-links li a:active,
+.social-links li a:hover {
+    background-color: #ececec;
+    border-radius: 50%;
+}
