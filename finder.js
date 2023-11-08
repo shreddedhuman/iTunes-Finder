@@ -7,7 +7,7 @@ const searchItunes = (term) => {
         .catch((error) => console.error('Request failed:', error));
 }
 
-// Crear elementos HTML a partir de los resultados
+// Crea elementos HTML a partir de los resultados
 const createSongElements = (results) => {
     const songContainer = document.getElementById('songs');
     songContainer.innerHTML = ''; // Limpia el contenedor antes de agregar nuevos elementos
@@ -33,6 +33,9 @@ const createSongElements = (results) => {
         audio.appendChild(audioSource);
 
         songContainer.appendChild(article);
+
+        img.style.width = '100px'; 
+        img.style.height = '100px'; 
     });
 }
 
